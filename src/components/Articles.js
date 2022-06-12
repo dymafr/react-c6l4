@@ -11,10 +11,10 @@ function Articles({}) {
     <div style={{ width: '700px' }}>
       <h1 className="mb-20">Liste des articles</h1>
       {articles.map((article) => (
-        <>
+        <div>
           <h2>{article.title}</h2>
           <p>{article.content}</p>
-        </>
+        </div>
       ))}
     </div>
   );
