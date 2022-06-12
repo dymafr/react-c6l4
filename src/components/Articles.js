@@ -2,14 +2,21 @@ import React from 'react';
 import Article from './Article';
 
 function Articles({ displayArticle }) {
-  let content = <div>Aucun article</div>;
-  if (displayArticle) {
-    content = <Article />;
-  }
+  const articles = [
+    { title: 'Un titre 1', content: 'Contenu 1' },
+    { title: 'Un titre 2', content: 'Contenu 2' },
+    { title: 'Un titre 3', content: 'Contenu 3' },
+  ];
+
   return (
     <div style={{ width: '700px' }}>
       <h1 className="mb-20">Liste des articles</h1>
-      {content}
+      {articles.map((article) => (
+        <>
+          <h2>{article.title}</h2>
+          <p>{article.content}</p>
+        </>
+      ))}
     </div>
   );
 }
