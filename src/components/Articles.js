@@ -1,7 +1,6 @@
 import React from 'react';
-import Article from './Article';
 
-function Articles({ displayArticle }) {
+function Articles({}) {
   const articles = [
     { title: 'Un titre 1', content: 'Contenu 1' },
     { title: 'Un titre 2', content: 'Contenu 2' },
